@@ -10,4 +10,11 @@
     <content src="index.html" />
     <access origin="*" />
     <preference name="permissions" value="none"/>
+    <!--
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.FileUtils" />
+        <param name="blackberry-package" value="org.apache.cordova.file.FileManager" />
+        <param name="ios-package" value="CDVFile" />
+    </feature>
+    -->
 </widget>

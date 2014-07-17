@@ -41,11 +41,11 @@
     </div>
     <script type="text/javascript">
         __meteor_runtime_config__ = 
-          {"meteorRelease"              : "0.8.1.3"
-          ,"ROOT_URL"                   : "http://1.34.192.129"
+          {"meteorRelease"              : "0.8.2"
+          ,"ROOT_URL"                   : "http://ec2-54-92-40-63.ap-northeast-1.compute.amazonaws.com:3000"
           ,"ROOT_URL_PATH_PREFIX"       : ""
           ,"autoupdateVersion"          : "34d536ee1a99638b995d7d2e1a7d297dd069abe4"
-          ,"DDP_DEFAULT_CONNECTION_URL" : "http://1.34.192.129"
+          ,"DDP_DEFAULT_CONNECTION_URL" : "http://ec2-54-92-40-63.ap-northeast-1.compute.amazonaws.com:3000"
           };
     </script>
     <script type="text/javascript" src="cordova.js"></script>
@@ -66,7 +66,10 @@
     <script type="text/javascript" src="lib/livedata.js"></script>
     <script type="text/javascript" src="lib/follower-livedata.js"></script>
     <script type="text/javascript" src="lib/mongo-livedata.js"></script>
+    <!--
+    手機程式不用自動更新
     <script type="text/javascript" src="lib/autoupdate.js"></script>
+    -->
     <script type="text/javascript" src="lib/webapp.js"></script>
     <script type="text/javascript" src="lib/reactive-dict.js"></script>
     <script type="text/javascript" src="lib/session.js"></script>
@@ -98,6 +101,11 @@
       HTML = Package.htmljs.HTML;
       Spacebars = Package['spacebars-common'].Spacebars;
     </script>
+
+    <!-- template engine -->
+    <script type="text/javascript" src="lib/html-tools.js"></script>
+    <script type="text/javascript" src="lib/spacebars-compiler.js"></script>
+    <script type="text/javascript" src="lib/cordovaMeteor-templateCompiler.js"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
   </body>
